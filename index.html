@@ -137,6 +137,19 @@
       text-decoration: underline;
       text-underline-offset: 2px;
     }
+
+    /* Mobile: make nav buttons smaller in portrait */
+    @media (max-width: 480px) {
+      .nav {
+        gap: 4px;
+      }
+
+      .nav a {
+        font-size: 0.78rem;
+        padding: 6px 10px;
+        border-radius: 7px 7px 2px 2px;
+      }
+    }
   </style>
 </head>
 <body>
