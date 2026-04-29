@@ -76,30 +76,49 @@
     .nav {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
+      gap: 6px;
+      justify-content: flex-end;
       margin: 28px 0 34px;
+      padding-bottom: 0;
+      position: relative;
+    }
+
+    .nav::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-bottom: 1px solid #1b1b1b;
     }
 
     .nav a {
+      position: relative;
+      z-index: 1;
       text-decoration: none;
-      color: #fff;
-      border: 1px solid #111;
-      background: #111;
-      border-radius: 999px;
-      padding: 7px 16px;
-      font-size: 0.92rem;
+      color: #ffffff;
+      border: 1px solid #1b1b1b;
+      border-radius: 8px 8px 2px 2px;
+      background: #1b1b1b;
+      padding: 7px 14px 7px;
+      font-size: 0.9rem;
+      font-weight: 500;
       transition: all 0.15s ease;
     }
 
     .nav a:hover {
-      background: #2a2a2a;
-      border-color: #2a2a2a;
+      background: #303030;
+      border-color: #303030;
+      transform: translateY(-1px);
+    }
+
+    .nav a {
+      margin-bottom: 0;
     }
 
     h2 {
       margin: 0 0 12px;
-      font-size: 1.2rem;
+      font-size: 1.35rem;
       font-weight: 600;
     }
 
@@ -111,6 +130,12 @@
 
     .news-list li {
       margin-bottom: 8px;
+    }
+
+    .news-list a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
   </style>
 </head>
@@ -141,7 +166,12 @@
     <section id="news">
       <h2>News</h2>
       <ul class="news-list">
-        <li>2026-04: This is a placeholder personal news line.</li>
+        <li>2026-04-13: 1st conference in my life! Attended CHI 2026 in Barcelona as <a href="https://dl.acm.org/doi/full/10.1145/3772363.3798497" target="_blank" rel="noreferrer noopener">poster presenter</a>.</li>
+        <li>2026-01-30: Last day of internship! I have finished my 8-month research internship at <a href="https://ahlab.org/" target="_blank" rel="noreferrer noopener">Augmented Human Lab</a>, National University of Singapore.</li>
+        <li>2025-08-01: Received scholarship for founders: Grundungsstipendium NRW. I got a new mission on radical contamination detection with team Visiorays.</li>
+        <li>2025-06-07: Leaving Germany for Singapore. I'm joining NUS as a research intern. Excited to start working on machine learning for audio denoising.</li>
+        <li>2025-05-31: As I'm heading to a new journey, I've terminated work at MMI at RWTH. I've had wonderful time at MMI working with my dear friend and supervisor Alexander Atanasyan.</li>
+        <li>2025-04-30: I have completed a 6-month internship at <a href="https://www.head-acoustics.com/de/" target="_blank" rel="noreferrer noopener">HEAD acoustics GmbH</a>.</li>
       </ul>
     </section>
 
